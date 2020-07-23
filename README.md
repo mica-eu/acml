@@ -1,29 +1,16 @@
 # acml
 
-## Project setup
+## Informações Gerais
 
-```
-npm install
-```
+Aplicação desenvolvida usando VueJS e NodeJS para consultar o status de rastreamento de encomendas compradadas no mercado livre e enviadas pela Azul Express.
+A ideia da aplicação surgiu da necessidade de uma interface mais intuitíva, simples e responsiva para consultar as inforações de rastreamento.
 
-### Compiles and hot-reloads for development
+Em resumo, existe uma pequena api que usa um módulo escrito para fazer *Web Scraping* no front da [aplicação oficial](https://hmg.onlineapp.com.br/EDIv2_rastreioML/Rastreio/MercadoLivre?TrackingNumber=2973783) e retornar esses dados em *JSON* para a aplicação feita em VueJS nesse repositório.
 
-```
-npm run serve
-```
+É possível ver a aplicação funcionando acessando https://acml.now.sh/?code=2973783
 
-### Compiles and minifies for production
+## Informações Técnicas
 
-```
-npm run build
-```
+Infelizmente, rodar esta aplicação localmente se torna um pouco chata por causa das *funções serveless* da Vercel (Antiga "Zeit"). Já que eu estou fazendo uso de algumas funcionalidades deles, só é possível rodar a aplicação localmente depois de instalar o cli da Vercel e fazer login. 
 
-### Lints and fixes files
-
-```
-npm run lint
-```
-
-### Customize configuration
-
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Porém, é possível rodar a aplicação sem a api usando o próprio cli do Vue.
